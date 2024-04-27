@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'main',
 ]
 
-CSRF_TRUSTED_ORIGINS = ['https://game-server-8els.onrender.com', 'https://www.about-uz.com', 'https://flamiethzgaming.uz']
+CSRF_TRUSTED_ORIGINS = ['https://game-server-1cbq.onrender.com', 'https://www.about-uz.com', 'https://flamiethzgaming.uz']
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
