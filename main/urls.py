@@ -12,4 +12,5 @@ urlpatterns = [
  path('add_player/', AddPlayerView.as_view(), name='add_player'),
  path('tournaments/', TournamentsView.as_view(), name='tournaments'),
  path('participate/<int:pk>/', ParticipateView.as_view(), name='participate'),
+ path('logout/', LogoutView.as_view(), name='logout'),
 ]

@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.views import View
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
-from django.contrib.auth import authenticate,login
+from django.contrib.auth import authenticate,login, logout
 import telebot
 import datetime
 from .models import *
@@ -120,3 +120,10 @@ class ParticipateView(View):
 #Tournament_ID: {tournament.tournament_id}  """)
 
          return redirect('main:profile')
+        
+
+
+class LogoutView(View):
+    def get(self, request):
+        logout(request)
+        return redirect('main:login')
